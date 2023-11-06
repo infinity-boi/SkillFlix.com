@@ -49,10 +49,6 @@ div{
     border-bottom: 0;
 }
 
-
-.topbarinin{
-    border-bottom: 0;
-}
 .navwrapper{
     align-items: center;
     display: flex;
@@ -101,6 +97,13 @@ h1 {
 }
 
 .emailwrap {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pwwrap {
     align-items: flex-end;
     display: flex;
     flex-direction: row;
@@ -181,7 +184,7 @@ button {
 .loginbutton {
     background-color: #04aa6d;
     color: #fff;
-    width:100%;
+    width:450px;
 }
 
 .error-message {
@@ -209,4 +212,9 @@ button {
     padding: 0 15px;
     position: relative;
 }
+}
+@media (max-width: 500px){
+    .loginbutton {
+        width: 100%;
+    }
 }
